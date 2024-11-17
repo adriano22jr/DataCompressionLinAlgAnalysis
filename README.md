@@ -7,4 +7,19 @@ The primary goal of this project is to perform a comparative analysis between tr
 
 ## Repository Structure
 - **datasets**, the datasets folder contains all the data used for the evaluation of the algorithms.
-- **code**, the code folder contains all the code written for the project.
+- **src**, the src folder contains all the code written for the project.
+
+
+## Installation
+Step 1: create and install the docker image with the following commands
+> docker build -t IMAGE_NAME . <br />
+> docker run -d -v "$(pwd):/workspace" IMAGE_NAME <br />
+> docker exec -it CONTAINER_ID /bin/bash <br />
+> cd workspace
+
+Step 2: create and activate the python virtual environment
+> python3 -m venv ENV_NAME <br />
+> source ENV_NAME/bin/activate <br />
+
+Step 3: install pip dependencies
+> pip3 install -r requirements.txt
