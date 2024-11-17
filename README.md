@@ -18,8 +18,8 @@ Step 1: create and install the docker image with the following commands
 > cd workspace
 
 Step 2: create and activate the python virtual environment
-> python3 -m venv ENV_NAME <br />
-> source ENV_NAME/bin/activate <br />
+> python3 -m venv data_compression <br />
+> source data_compression/bin/activate <br />
 
 Step 3: install pip dependencies
 > pip3 install -r requirements.txt
