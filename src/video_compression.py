@@ -19,7 +19,7 @@ match algorithm:
         if(pathlib.Path(output_path).suffix == ".mp4"):
             compressors.compressor_HEVCVS(input_path, output_path)
         else:
-            print("HEVC-VS needs an output file with extension .mp4")
+           print("HEVC-VS needs an output file with extension .mp4")
     case "AV1-VS":
         if(pathlib.Path(output_path).suffix == ".mkv"):
             compressors.compressor_AV1VS(input_path, output_path)

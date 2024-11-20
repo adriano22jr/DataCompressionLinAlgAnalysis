@@ -11,7 +11,7 @@ def compressor_HEVCVS(input_path, output_path):
     output_file = output_path
     
     # call ffmpeg to compress the video
-    subprocess.run(["./ffmpeg/bin/ffmpeg", "-framerate", "120", "-i", input_file, "-crf", "18", "-c:v", "libx265", output_file])
+    subprocess.run(["../../bin/ffmpeg", "-framerate", "120", "-i", input_file, "-crf", "18", "-c:v", "libx265", output_file])
     
     # compress ratio evaluation
     size = 0
@@ -32,7 +32,7 @@ def compressor_AV1VS(input_path, output_path):
     output_file = output_path
     
     # call ffmpeg to compress the video
-    subprocess.run(["./ffmpeg/bin/ffmpeg", "-framerate", "120", "-i", input_file, "-crf", "3", "-c:v", "libaom-av1", output_file])
+    subprocess.run(["../../bin/ffmpeg", "-framerate", "120", "-i", input_file, "-crf", "3", "-c:v", "libaom-av1", output_file])
     
     # compress ratio evaluation
     size = 0
@@ -46,13 +46,13 @@ def compressor_AV1VS(input_path, output_path):
     print("compression ratio: " + str(size/videosize))    
 
 
-def compression_VP9VS(input_path, output_path):
+def compressor_VP9VS(input_path, output_path):
     # set input and output paths
     input_file = input_path
     output_file = output_path
     
     # call ffmpeg to compress the video
-    subprocess.run(["./ffmpeg/bin/ffmpeg", "-framerate", "120", "-i", input_file, "-crf", "3", "-c:v", "libvpx-vp9", output_file])
+    subprocess.run(["../../bin/ffmpeg", "-framerate", "120", "-i", input_file, "-crf", "3", "-c:v", "libvpx-vp9", output_file])
     
     # compress ratio evaluation
     size = 0
