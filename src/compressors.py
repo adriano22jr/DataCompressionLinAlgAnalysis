@@ -1,4 +1,4 @@
-import cv2, imageio, av, os, subprocess
+import cv2, imageio, av, os, subprocess, time
 import imageio.v3 as iio
 import imageio.plugins.pyav as pyav
 import numpy as np
@@ -31,6 +31,8 @@ def compressor_AV1VS(input_path, output_path):
     input_file = input_path
     output_file = output_path
     
+    startTime = time.time()
+    
     # call ffmpeg to compress the video
     subprocess.run(["../../bin/ffmpeg", "-framerate", "120", "-i", input_file, "-crf", "3", "-c:v", "libaom-av1", output_file])
     
@@ -41,8 +43,11 @@ def compressor_AV1VS(input_path, output_path):
         for f in files:
             fp = os.path.join(path, f)
             size += os.path.getsize(fp)
+            
+    endTime = time.time()
 
-    videosize = os.stat(os.path.abspath(output_path)).st_size   
+    videosize = os.stat(os.path.abspath(output_path)).st_size  
+    print("encoded in %d seconds.", endTime - startTime) 
     print("compression ratio: " + str(size/videosize))    
 
 
