@@ -23,37 +23,3 @@ for frame in container.decode(stream):
         imgDec = frame.to_image()
     frame.to_image().save(output_path % count)
     count += 1
-    
-
-"""
-#DIFFERENZA PIXEL PER PIXEL A COLORI
-# Open both images
-image1 = Image.open("./ArtGallery2/Frame_000.png ")
-image2 = Image.open(output_path.replace("%d","0"))
-
-
-# Get the width and height of both images
-width1, height1 = image1.size
-width2, height2 = image2.size
-
-# Check if the images have the same size
-if (width1 != width2) or (height1 != height2):
-    print("Error: Images have different sizes")
-else:
-    # Compare the pixels of both images
-    different_pixels = 0
-    total_pixels = width1 * height1
-    for x in range(width1):
-        for y in range(height1):
-            # Get the pixel values of both images at position (x, y)
-            pixel1 = image1.getpixel((x, y))
-            pixel2 = image2.getpixel((x, y))
-
-            # Compare the pixel values
-            if pixel1 != pixel2:
-                different_pixels += 1
-
-    # Calculate the percentage of equality
-    percentage = (total_pixels - different_pixels) / total_pixels * 100
-    print("Percentage of equality: {:.2f}%".format(percentage))
-"""
