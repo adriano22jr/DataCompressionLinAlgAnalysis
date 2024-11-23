@@ -1,0 +1,220 @@
+(data_compression) root@57b712ecbcb8:/workspace/src# python video_compression.py AV1-VS ../datasets/Dice/dice-%2d.png ../results/compression/dice-av1.mkv
+Input #0, image2, from '../datasets/Dice/dice-%2d.png':
+  Duration: 00:00:00.21, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: png, rgb24(pc, gbr/bt709/iec61966-2-1), 840x593, 120 fps, 120 tbr, 120 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> av1 (libaom-av1))
+Press [q] to stop, [?] for help
+[libaom-av1 @ 0xaaaad1b6b2e0] v3.8.2
+Output #0, matroska, to '../results/compression/dice-av1.mkv':
+  Metadata:
+    encoder         : Lavf60.16.100
+  Stream #0:0: Video: av1 (AV01 / 0x31305641), gbrp(pc, gbr/bt709/iec61966-2-1, progressive), 840x593, q=2-31, 120 fps, 1k tbn
+    Metadata:
+      encoder         : Lavc60.31.102 libaom-av1
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+[out#0/matroska @ 0xaaaad1b6acf0] video:1218kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.097700%
+frame=   25 fps=0.1 q=0.0 Lsize=    1220kB time=00:00:00.20 bitrate=49956.8kbits/s speed=0.00118x
+compression ratio: 2.5074007942862635
+
+
+(data_compression) root@57b712ecbcb8:/workspace/src# python video_compression.py AV1-VS ../datasets/Dragons/dragons-%2d.png ../results/compression/dragons-av1.mkv
+Input #0, image2, from '../datasets/Dragons/dragons-%2d.png':
+  Duration: 00:00:00.22, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: png, rgb24(pc, gbr/bt709/iec61966-2-1), 840x593, 120 fps, 120 tbr, 120 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> av1 (libaom-av1))
+Press [q] to stop, [?] for help
+[libaom-av1 @ 0xaaaae7eb72e0] v3.8.2
+Output #0, matroska, to '../results/compression/dragons-av1.mkv':
+  Metadata:
+    encoder         : Lavf60.16.100
+  Stream #0:0: Video: av1 (AV01 / 0x31305641), gbrp(pc, gbr/bt709/iec61966-2-1, progressive), 840x593, q=2-31, 120 fps, 1k tbn
+    Metadata:
+      encoder         : Lavc60.31.102 libaom-av1
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+[out#0/matroska @ 0xaaaae7eb6cf0] video:2898kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.041285%
+frame=   26 fps=0.1 q=0.0 Lsize=    2899kB time=00:00:00.20 bitrate=113986.1kbits/s speed=0.000654x
+compression ratio: 3.975218149146572
+
+
+(data_compression) root@57b712ecbcb8:/workspace/src# python video_compression.py AV1-VS ../datasets/Fish/fishi-%2d.png ../results/compression/fish-av1.mkv
+Input #0, image2, from '../datasets/Fish/fishi-%2d.png':
+  Duration: 00:00:00.21, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: png, rgb24(pc, gbr/bt709/iec61966-2-1), 840x593, 120 fps, 120 tbr, 120 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> av1 (libaom-av1))
+Press [q] to stop, [?] for help
+[libaom-av1 @ 0xaaab049342e0] v3.8.2
+Output #0, matroska, to '../results/compression/fish-av1.mkv':
+  Metadata:
+    encoder         : Lavf60.16.100
+  Stream #0:0: Video: av1 (AV01 / 0x31305641), gbrp(pc, gbr/bt709/iec61966-2-1, progressive), 840x593, q=2-31, 120 fps, 1k tbn
+    Metadata:
+      encoder         : Lavc60.31.102 libaom-av1
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+[out#0/matroska @ 0xaaab04933cf0] video:1429kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.083284%
+frame=   25 fps=0.1 q=0.0 Lsize=    1431kB time=00:00:00.20 bitrate=58595.3kbits/s speed=0.000767x
+compression ratio: 5.022921300145677
+
+
+(data_compression) root@57b712ecbcb8:/workspace/src# python video_compression.py AV1-VS ../datasets/Messerschmitt/messerschmitt-%2d.png ../results/compression/messerschmitt-av1.mkv
+Input #0, image2, from '../datasets/Messerschmitt/messerschmitt-%2d.png':
+  Duration: 00:00:00.21, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: png, rgb24(pc, gbr/bt709/iec61966-2-1), 840x593, 120 fps, 120 tbr, 120 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> av1 (libaom-av1))
+Press [q] to stop, [?] for help
+[libaom-av1 @ 0xaaaacef94320] v3.8.2
+Output #0, matroska, to '../results/compression/messerschmitt-av1.mkv':
+  Metadata:
+    encoder         : Lavf60.16.100
+  Stream #0:0: Video: av1 (AV01 / 0x31305641), gbrp(pc, gbr/bt709/iec61966-2-1, progressive), 840x593, q=2-31, 120 fps, 1k tbn
+    Metadata:
+      encoder         : Lavc60.31.102 libaom-av1
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+[out#0/matroska @ 0xaaaacef93d30] video:2241kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.053162%
+frame=   25 fps=0.1 q=0.0 Lsize=    2242kB time=00:00:00.20 bitrate=91843.8kbits/s speed=0.000618x
+compression ratio: 3.858361635020169
+
+
+(data_compression) root@57b712ecbcb8:/workspace/src# python video_compression.py AV1-VS ../datasets/Blob/Frame_%3d.png ../results/compression/blob-av1.mkv
+Input #0, image2, from '../datasets/Blob/Frame_%3d.png':
+  Duration: 00:00:00.84, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: png, rgb24(pc, gbr/unknown/unknown), 960x720 [SAR 3937:3937 DAR 4:3], 120 fps, 120 tbr, 120 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> av1 (libaom-av1))
+Press [q] to stop, [?] for help
+[libaom-av1 @ 0xaaaada3772e0] v3.8.2
+Output #0, matroska, to '../results/compression/blob-av1.mkv':
+  Metadata:
+    encoder         : Lavf60.16.100
+  Stream #0:0: Video: av1 (AV01 / 0x31305641), gbrp(pc, gbr/unknown/unknown, progressive), 960x720 [SAR 1:1 DAR 4:3], q=2-31, 120 fps, 1k tbn
+    Metadata:
+      encoder         : Lavc60.31.102 libaom-av1
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+[out#0/matroska @ 0xaaaada376cf0] video:2698kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.056543%
+frame=  101 fps=0.1 q=0.0 Lsize=    2699kB time=00:00:00.83 bitrate=26535.1kbits/s speed=0.000672x
+encoded in %d seconds. 1240.2693161964417
+compression ratio: 19.411811397371128
+
+
+(data_compression) root@b0fe889cb4bb:/workspace/src# python video_compression.py AV1-VS ../datasets/ArtGallery2/Frame_%3d.png ../results/compression/ag-av1.mkv
+Input #0, image2, from '../datasets/ArtGallery2/Frame_%3d.png':
+  Duration: 00:00:00.84, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: png, rgb24(pc, gbr/unknown/unknown), 960x720 [SAR 3937:3937 DAR 4:3], 120 fps, 120 tbr, 120 tbn
+File '../results/compression/ag-av1.mkv' already exists. Overwrite? [y/N] y
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> av1 (libaom-av1))
+Press [q] to stop, [?] for help
+[libaom-av1 @ 0x559d8c455980] v3.8.2
+Output #0, matroska, to '../results/compression/ag-av1.mkv':
+  Metadata:
+    encoder         : Lavf60.16.100
+  Stream #0:0: Video: av1 (AV01 / 0x31305641), gbrp(pc, gbr/unknown/unknown, progressive), 960x720 [SAR 1:1 DAR 4:3], q=2-31, 120 fps, 1k tbn
+    Metadata:
+      encoder         : Lavc60.31.102 libaom-av1
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+[out#0/matroska @ 0x559d8c455240] video:10720kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.014813%
+frame=  101 fps=0.0 q=0.0 Lsize=   10722kB time=00:00:00.83 bitrate=105396.7kbits/s speed=0.000177x
+encoded in %d seconds. 4707.029942274094
+compression ratio: 8.130208061503144
+
+
+(data_compression) root@99c5563b2f64:/workspace/src# python video_compression.py AV1-VS ../datasets/Cobblestone/Frame_%3d.png ../results/compression/cobblestone-av1.mkv
+Input #0, image2, from '../datasets/Cobblestone/Frame_%3d.png':
+  Duration: 00:00:00.84, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: png, rgb24(pc, gbr/unknown/unknown), 960x720 [SAR 3937:3937 DAR 4:3], 120 fps, 120 tbr, 120 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> av1 (libaom-av1))
+Press [q] to stop, [?] for help
+[libaom-av1 @ 0x560e478e6b00] v3.8.2
+Output #0, matroska, to '../results/compression/cobblestone-av1.mkv':
+  Metadata:
+    encoder         : Lavf60.16.100
+  Stream #0:0: Video: av1 (AV01 / 0x31305641), gbrp(pc, gbr/unknown/unknown, progressive), 960x720 [SAR 1:1 DAR 4:3], q=2-31, 120 fps, 1k tbn
+    Metadata:
+      encoder         : Lavc60.31.102 libaom-av1
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+[out#0/matroska @ 0x560e478e63c0] video:17012kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.009437%
+frame=  101 fps=0.0 q=0.0 Lsize=   17013kB time=00:00:00.83 bitrate=167248.0kbits/s speed=0.000274x
+encoded in %d seconds. 3046.174259662628
+compression ratio: 5.9004509386332336
+
+
+(data_compression) root@78b088211feb:/workspace/src# python video_compression.py AV1-VS ../datasets/Mannequin/Frame_%3d.png ../results/compression/mannequin-av1.mkv
+Input #0, image2, from '../datasets/Mannequin/Frame_%3d.png':
+  Duration: 00:00:00.84, start: 0.000000, bitrate: N/A
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> av1 (libaom-av1))
+Press [q] to stop, [?] for help
+[libaom-av1 @ 0x5609adf0eb00] v3.8.2
+Output #0, matroska, to '../results/compression/mannequin-av1.mkv':
+  Metadata:
+    encoder         : Lavf60.16.100
+  Stream #0:0: Video: av1 (AV01 / 0x31305641), gbrp(pc, gbr/unknown/unknown, progressive), 960x720 [SAR 1:1 DAR 4:3], q=2-31, 120 fps, 1k tbn
+    Metadata:
+      encoder         : Lavc60.31.102 libaom-av1
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+frame=   66 fps=0.0 q=0.0 size=   11264kB time=00:00:00.55 bitrate=167772.[out#0/matroska @ 0x5609adf0e3c0] video:25434kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.006385%
+frame=  101 fps=0.0 q=0.0 Lsize=   25436kB time=00:00:00.83 bitrate=250043.0kbits/s speed=0.000121x
+encoded in %d seconds. 6942.124797821045
+compression ratio: 3.0702797528201495
+frame=  101 fps=0.0 q=0.0 Lsize=   25436kB time=00:00:00.83 bitrate=250043.0kbits/s speed=0.000121x
+encoded in %d seconds. 6942.124797821045
+frame=  101 fps=0.0 q=0.0 Lsize=   25436kB time=00:00:00.83 bitrate=250043.0kbits/s speed=0.000121x
+frame=  101 fps=0.0 q=0.0 Lsize=   25436kB time=00:00:00.83 bitrate=250043.0kbits/s speed=0.000121x
+encoded in %d seconds. 6942.124797821045
+compression ratio: 3.0702797528201495
+
+
+(data_compression) root@99c5563b2f64:/workspace/src# python video_compression.py AV1-VS ../datasets/Car/Frame_%3d.png ../results/compression/car-av1.mkv
+Input #0, image2, from '../datasets/Car/Frame_%3d.png':
+  Duration: 00:00:00.84, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: png, rgb24(pc, gbr/unknown/unknown), 960x720 [SAR 3937:3937 DAR 4:3], 120 fps, 120 tbr, 120 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> av1 (libaom-av1))
+Press [q] to stop, [?] for help
+[libaom-av1 @ 0x55819fdb8b00] v3.8.2
+Output #0, matroska, to '../results/compression/car-av1.mkv':
+  Metadata:
+    encoder         : Lavf60.16.100
+  Stream #0:0: Video: av1 (AV01 / 0x31305641), gbrp(pc, gbr/unknown/unknown, progressive), 960x720 [SAR 1:1 DAR 4:3], q=2-31, 120 fps, 1k tbn
+    Metadata:
+      encoder         : Lavc60.31.102 libaom-av1
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+[out#0/matroska @ 0x55819fdb83c0] video:6606kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.023740%
+frame=  101 fps=0.0 q=0.0 Lsize=    6608kB time=00:00:00.83 bitrate=64958.2kbits/s speed=0.000153x    
+encoded in %d seconds. 5455.6335554122925
+compression ratio: 9.384606483260406
+
+
+(data_compression) root@78b088211feb:/workspace/src# python video_compression.py AV1-VS ../datasets/OpEx/opex-%2d.png ../results/compression/opex-av1.mkv        
+Input #0, image2, from '../datasets/OpEx/opex-%2d.png':
+  Duration: 00:00:00.28, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: png, rgb24(pc, gbr/unknown/unknown), 3091x2068, 120 fps, 120 tbr, 120 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> av1 (libaom-av1))
+Press [q] to stop, [?] for help
+[libaom-av1 @ 0x56120b2e1100] v3.8.2
+Output #0, matroska, to '../results/compression/opex-av1.mkv':
+  Metadata:
+    encoder         : Lavf60.16.100
+  Stream #0:0: Video: av1 (AV01 / 0x31305641), gbrp(pc, gbr/unknown/unknown, progressive), 3091x2068, q=2-31, 120 fps, 1k tbn
+    Metadata:
+      encoder         : Lavc60.31.102 libaom-av1
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+[out#0/matroska @ 0x56120b2df3c0] video:7525kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.016586%
+frame=   34 fps=0.0 q=0.0 Lsize=    7526kB time=00:00:00.27 bitrate=224192.4kbits/s speed=4.93e-05x
+encoded in %d seconds. 5578.548586130142
+compression ratio: 9.57626091351391
