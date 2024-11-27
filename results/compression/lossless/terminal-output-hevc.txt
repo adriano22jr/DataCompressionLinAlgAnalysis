@@ -1,0 +1,480 @@
+(data_compression) root@b0fe889cb4bb:/workspace/src# python3 video_compression.py HEVC ../datasets/ArtGallery/Frame_%3d.png ../results/compression/lossless/artgallery-hevc.mp4
+Input #0, image2, from '../datasets/ArtGallery/Frame_%3d.png':
+  Duration: 00:00:00.84, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: png, rgb24(pc, gbr/unknown/unknown), 960x720 [SAR 3937:3937 DAR 4:3], 120 fps, 120 tbr, 120 tbn
+File '../results/compression/lossless/artgallery-hevc.mp4' already exists. Overwrite? [y/N] y
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> hevc (libx265))
+Press [q] to stop, [?] for help
+x265 [info]: HEVC encoder version 3.5+1-f0c1022b6
+x265 [info]: build info [Linux][GCC 13.2.0][64 bit] 8bit+10bit+12bit
+x265 [info]: using cpu capabilities: MMX2 SSE2Fast LZCNT SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+x265 [warning]: halving the quality when psy-rd is enabled for 444 input. Setting cbQpOffset = 6 and crQpOffset = 6
+x265 [info]: Main 4:4:4 profile, Level-8.5 (Main tier)
+x265 [warning]: No thread pool allocated, --wpp disabled
+x265 [warning]: No thread pool allocated, --lookahead-slices disabled
+x265 [info]: Slices                              : 1
+x265 [info]: frame threads / pool features       : 3 / none
+x265 [info]: Coding QT: max CU size, min CU size : 64 / 8
+x265 [info]: Residual QT: max TU size, max depth : 32 / 1 inter / 1 intra
+x265 [info]: ME / range / subpel / merge         : hex / 57 / 2 / 3
+x265 [info]: Keyframe min / max / scenecut / bias  : 25 / 250 / 40 / 5.00
+x265 [info]: Cb/Cr QP Offset                     : 6 / 6
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb       : 1 / 1 / 0
+x265 [info]: References / ref-limit  cu / depth  : 3 / off / on
+x265 [info]: Rate Control                        : Lossless
+x265 [info]: tools: rd=3 psy-rd=2.00 early-skip rskip mode=1 signhide tmvp
+x265 [info]: tools: b-intra strong-intra-smoothing deblock sao
+Output #0, mp4, to '../results/compression/lossless/artgallery-hevc.mp4':
+  Metadata:
+    encoder         : Lavf60.16.100
+  Stream #0:0: Video: hevc (hev1 / 0x31766568), gbrp(pc, gbr/unknown/unknown, progressive), 960x720 [SAR 1:1 DAR 4:3], q=2-31, 120 fps, 15360 tbn
+    Metadata:
+      encoder         : Lavc60.31.102 libx265
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+[out#0/mp4 @ 0x55ae76b4c280] video:44841kB audio:0kB subtitle:0kB other streams:0kB global headers:2kB muxing overhead: 0.010316%
+frame=  101 fps=5.4 q=4.0 Lsize=   44846kB time=00:00:00.81 bitrate=449848.4kbits/s speed=0.0433x
+x265 [info]: frame I:      1, Avg QP:4.00  kb/s: 783424.32
+x265 [info]: frame P:     25, Avg QP:4.00  kb/s: 552142.27
+x265 [info]: frame B:     75, Avg QP:4.00  kb/s: 393243.25
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 3.8% 0.0% 0.0% 96.2% 0.0%
+x265 [info]: lossless compression ratio 1.52::1
+
+encoded 101 frames in 18.83s (5.36 fps), 436437.88 kb/s, Avg QP:4.00
+Encoded in 20.803472995758057 seconds.
+
+
+(data_compression) root@b0fe889cb4bb:/workspace/src# python3 video_compression.py HEVC ../datasets/Blob/Frame_%3d.png ..
+/results/compression/lossless/blob-hevc.mp4
+Input #0, image2, from '../datasets/Blob/Frame_%3d.png':
+  Duration: 00:00:00.84, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: png, rgb24(pc, gbr/unknown/unknown), 960x720 [SAR 3937:3937 DAR 4:3], 120 fps, 120 tbr, 120 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> hevc (libx265))
+Press [q] to stop, [?] for help
+x265 [info]: HEVC encoder version 3.5+1-f0c1022b6
+x265 [info]: build info [Linux][GCC 13.2.0][64 bit] 8bit+10bit+12bit
+x265 [info]: using cpu capabilities: MMX2 SSE2Fast LZCNT SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+x265 [warning]: halving the quality when psy-rd is enabled for 444 input. Setting cbQpOffset = 6 and crQpOffset = 6
+x265 [info]: Main 4:4:4 profile, Level-8.5 (Main tier)
+x265 [warning]: No thread pool allocated, --wpp disabled
+x265 [warning]: No thread pool allocated, --lookahead-slices disabled
+x265 [info]: Slices                              : 1
+x265 [info]: frame threads / pool features       : 3 / none
+x265 [info]: Coding QT: max CU size, min CU size : 64 / 8
+x265 [info]: Residual QT: max TU size, max depth : 32 / 1 inter / 1 intra
+x265 [info]: ME / range / subpel / merge         : hex / 57 / 2 / 3
+x265 [info]: Keyframe min / max / scenecut / bias  : 25 / 250 / 40 / 5.00
+x265 [info]: Cb/Cr QP Offset                     : 6 / 6
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb       : 1 / 1 / 0
+x265 [info]: References / ref-limit  cu / depth  : 3 / off / on
+x265 [info]: Rate Control                        : Lossless
+x265 [info]: tools: rd=3 psy-rd=2.00 early-skip rskip mode=1 signhide tmvp
+x265 [info]: tools: b-intra strong-intra-smoothing deblock sao
+Output #0, mp4, to '../results/compression/lossless/blob-hevc.mp4':
+  Metadata:
+    encoder         : Lavf60.16.100
+  Stream #0:0: Video: hevc (hev1 / 0x31766568), gbrp(pc, gbr/unknown/unknown, progressive), 960x720 [SAR 1:1 DAR 4:3], q=2-31, 120 fps, 15360 tbn
+    Metadata:
+      encoder         : Lavc60.31.102 libx265
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+[out#0/mp4 @ 0x555ff4e38280] video:19798kB audio:0kB subtitle:0kB other streams:0kB global headers:2kB muxing overhead: 0.022893%
+frame=  101 fps=7.2 q=4.0 Lsize=   19802kB time=00:00:00.81 bitrate=198636.9kbits/s speed=0.0579x
+x265 [info]: frame I:      1, Avg QP:4.00  kb/s: 529515.84
+x265 [info]: frame P:     25, Avg QP:4.00  kb/s: 242028.56
+x265 [info]: frame B:     75, Avg QP:4.00  kb/s: 171751.35
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 3.8% 0.0% 0.0% 96.2% 0.0%
+x265 [info]: lossless compression ratio 3.44::1
+
+encoded 101 frames in 14.07s (7.18 fps), 192688.92 kb/s, Avg QP:4.00
+Encoded in 14.54220986366272 seconds.
+
+
+(data_compression) root@b0fe889cb4bb:/workspace/src# python3 video_compression.py HEVC ../datasets/Car/Frame_%3d.png ../results/compression/lossless/car-hevc.mp4
+Input #0, image2, from '../datasets/Car/Frame_%3d.png':
+  Duration: 00:00:00.84, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: png, rgb24(pc, gbr/unknown/unknown), 960x720 [SAR 3937:3937 DAR 4:3], 120 fps, 120 tbr, 120 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> hevc (libx265))
+Press [q] to stop, [?] for help
+x265 [info]: HEVC encoder version 3.5+1-f0c1022b6
+x265 [info]: build info [Linux][GCC 13.2.0][64 bit] 8bit+10bit+12bit
+x265 [info]: using cpu capabilities: MMX2 SSE2Fast LZCNT SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+x265 [warning]: halving the quality when psy-rd is enabled for 444 input. Setting cbQpOffset = 6 and crQpOffset = 6
+x265 [info]: Main 4:4:4 profile, Level-8.5 (Main tier)
+x265 [warning]: No thread pool allocated, --wpp disabled
+x265 [warning]: No thread pool allocated, --lookahead-slices disabled
+x265 [info]: Slices                              : 1
+x265 [info]: frame threads / pool features       : 3 / none
+x265 [info]: Coding QT: max CU size, min CU size : 64 / 8
+x265 [info]: Residual QT: max TU size, max depth : 32 / 1 inter / 1 intra
+x265 [info]: ME / range / subpel / merge         : hex / 57 / 2 / 3
+x265 [info]: Keyframe min / max / scenecut / bias  : 25 / 250 / 40 / 5.00
+x265 [info]: Cb/Cr QP Offset                     : 6 / 6
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb       : 1 / 1 / 0
+x265 [info]: References / ref-limit  cu / depth  : 3 / off / on
+x265 [info]: Rate Control                        : Lossless
+x265 [info]: tools: rd=3 psy-rd=2.00 early-skip rskip mode=1 signhide tmvp
+x265 [info]: tools: b-intra strong-intra-smoothing deblock sao
+Output #0, mp4, to '../results/compression/lossless/car-hevc.mp4':
+  Metadata:
+    encoder         : Lavf60.16.100
+  Stream #0:0: Video: hevc (hev1 / 0x31766568), gbrp(pc, gbr/unknown/unknown, progressive), 960x720 [SAR 1:1 DAR 4:3], q=2-31, 120 fps, 15360 tbn
+    Metadata:
+      encoder         : Lavc60.31.102 libx265
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+[out#0/mp4 @ 0x55c0f27c9280] video:28843kB audio:0kB subtitle:0kB other streams:0kB global headers:2kB muxing overhead: 0.015808%
+frame=  101 fps=6.5 q=4.0 Lsize=   28847kB time=00:00:00.81 bitrate=289368.4kbits/s speed=0.0523x
+x265 [info]: frame I:      1, Avg QP:4.00  kb/s: 555083.52
+x265 [info]: frame P:     25, Avg QP:4.00  kb/s: 381288.08
+x265 [info]: frame B:     75, Avg QP:4.00  kb/s: 243546.12
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 3.8% 0.0% 0.0% 96.2% 0.0%
+x265 [info]: lossless compression ratio 2.36::1
+
+encoded 101 frames in 15.55s (6.49 fps), 280725.20 kb/s, Avg QP:4.00
+Encoded in 16.13130784034729 seconds.
+
+
+(data_compression) root@b0fe889cb4bb:/workspace/src# python3 video_compression.py HEVC ../datasets/Cobblestone/Frame_%3d.png ../results/compression/lossless/cobblestone-hevc.mp4
+Input #0, image2, from '../datasets/Cobblestone/Frame_%3d.png':
+  Duration: 00:00:00.84, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: png, rgb24(pc, gbr/unknown/unknown), 960x720 [SAR 3937:3937 DAR 4:3], 120 fps, 120 tbr, 120 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> hevc (libx265))
+Press [q] to stop, [?] for help
+x265 [info]: HEVC encoder version 3.5+1-f0c1022b6
+x265 [info]: build info [Linux][GCC 13.2.0][64 bit] 8bit+10bit+12bit
+x265 [info]: using cpu capabilities: MMX2 SSE2Fast LZCNT SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+x265 [warning]: halving the quality when psy-rd is enabled for 444 input. Setting cbQpOffset = 6 and crQpOffset = 6
+x265 [info]: Main 4:4:4 profile, Level-8.5 (Main tier)
+x265 [warning]: No thread pool allocated, --wpp disabled
+x265 [warning]: No thread pool allocated, --lookahead-slices disabled
+x265 [info]: Slices                              : 1
+x265 [info]: frame threads / pool features       : 3 / none
+x265 [info]: Coding QT: max CU size, min CU size : 64 / 8
+x265 [info]: Residual QT: max TU size, max depth : 32 / 1 inter / 1 intra
+x265 [info]: ME / range / subpel / merge         : hex / 57 / 2 / 3
+x265 [info]: Keyframe min / max / scenecut / bias  : 25 / 250 / 40 / 5.00
+x265 [info]: Cb/Cr QP Offset                     : 6 / 6
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb       : 1 / 1 / 0
+x265 [info]: References / ref-limit  cu / depth  : 3 / off / on
+x265 [info]: Rate Control                        : Lossless
+x265 [info]: tools: rd=3 psy-rd=2.00 early-skip rskip mode=1 signhide tmvp
+x265 [info]: tools: b-intra strong-intra-smoothing deblock sao
+Output #0, mp4, to '../results/compression/lossless/cobblestone-hevc.mp4':
+  Metadata:
+    encoder         : Lavf60.16.100
+  Stream #0:0: Video: hevc (hev1 / 0x31766568), gbrp(pc, gbr/unknown/unknown, progressive), 960x720 [SAR 1:1 DAR 4:3], q=2-31, 120 fps, 15360 tbn
+    Metadata:
+      encoder         : Lavc60.31.102 libx265
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+[out#0/mp4 @ 0x55daccc4e280] video:49099kB audio:0kB subtitle:0kB other streams:0kB global headers:2kB muxing overhead: 0.010679%
+frame=  101 fps=5.4 q=4.0 Lsize=   49104kB time=00:00:00.81 bitrate=492564.5kbits/s speed=0.0439x
+x265 [info]: frame I:      1, Avg QP:4.00  kb/s: 1061266.56
+x265 [info]: frame P:     25, Avg QP:4.00  kb/s: 580296.69
+x265 [info]: frame B:     75, Avg QP:4.00  kb/s: 435961.52
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 3.8% 0.0% 0.0% 96.2% 0.0%
+x265 [info]: lossless compression ratio 1.39::1
+
+encoded 101 frames in 18.49s (5.46 fps), 477879.21 kb/s, Avg QP:4.00
+Encoded in 19.09469962120056 seconds.
+
+
+(data_compression) root@b0fe889cb4bb:/workspace/src# python3 video_compression.py HEVC ../datasets/Dice/Frame_%3d.png ../results/compression/lossless/dice-hevc.mp4
+Input #0, image2, from '../datasets/Dice/Frame_%3d.png':
+  Duration: 00:00:00.21, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: png, rgb24(pc, gbr/bt709/iec61966-2-1), 840x593, 120 fps, 120 tbr, 120 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> hevc (libx265))
+Press [q] to stop, [?] for help
+x265 [info]: HEVC encoder version 3.5+1-f0c1022b6
+x265 [info]: build info [Linux][GCC 13.2.0][64 bit] 8bit+10bit+12bit
+x265 [info]: using cpu capabilities: MMX2 SSE2Fast LZCNT SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+x265 [warning]: halving the quality when psy-rd is enabled for 444 input. Setting cbQpOffset = 6 and crQpOffset = 6
+x265 [info]: Main 4:4:4 profile, Level-8.5 (Main tier)
+x265 [warning]: No thread pool allocated, --wpp disabled
+x265 [warning]: No thread pool allocated, --lookahead-slices disabled
+x265 [info]: Slices                              : 1
+x265 [info]: frame threads / pool features       : 3 / none
+x265 [info]: Coding QT: max CU size, min CU size : 64 / 8
+x265 [info]: Residual QT: max TU size, max depth : 32 / 1 inter / 1 intra
+x265 [info]: ME / range / subpel / merge         : hex / 57 / 2 / 3
+x265 [info]: Keyframe min / max / scenecut / bias  : 25 / 250 / 40 / 5.00
+x265 [info]: Cb/Cr QP Offset                     : 6 / 6
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb       : 1 / 1 / 0
+x265 [info]: References / ref-limit  cu / depth  : 3 / off / on
+x265 [info]: Rate Control                        : Lossless
+x265 [info]: tools: rd=3 psy-rd=2.00 early-skip rskip mode=1 signhide tmvp
+x265 [info]: tools: b-intra strong-intra-smoothing deblock sao
+Output #0, mp4, to '../results/compression/lossless/dice-hevc.mp4':
+  Metadata:
+    encoder         : Lavf60.16.100
+  Stream #0:0: Video: hevc (hev1 / 0x31766568), gbrp(pc, gbr/bt709/iec61966-2-1, progressive), 840x593, q=2-31, 120 fps, 15360 tbn
+    Metadata:
+      encoder         : Lavc60.31.102 libx265
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+[out#0/mp4 @ 0x561653133280] video:3036kB audio:0kB subtitle:0kB other streams:0kB global headers:2kB muxing overhead: 0.114122%
+frame=   25 fps= 14 q=4.0 Lsize=    3040kB time=00:00:00.18 bitrate=135818.2kbits/s speed=0.103x
+x265 [info]: frame I:      1, Avg QP:4.00  kb/s: 131360.64
+x265 [info]: frame P:      6, Avg QP:4.00  kb/s: 118991.04
+x265 [info]: frame B:     18, Avg QP:4.00  kb/s: 118843.68
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 14.3% 0.0% 28.6% 28.6% 28.6%
+x265 [info]: lossless compression ratio 4.01::1
+
+encoded 25 frames in 1.76s (14.21 fps), 119379.73 kb/s, Avg QP:4.00
+Encoded in 2.2893009185791016 seconds.
+
+
+(data_compression) root@b0fe889cb4bb:/workspace/src# python3 video_compression.py HEVC ../datasets/Dragons/Frame_%3d.png ../results/compression/lossless/dragons-hevc.mp4
+Input #0, image2, from '../datasets/Dragons/Frame_%3d.png':
+  Duration: 00:00:00.22, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: png, rgb24(pc, gbr/bt709/iec61966-2-1), 840x593, 120 fps, 120 tbr, 120 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> hevc (libx265))
+Press [q] to stop, [?] for help
+x265 [info]: HEVC encoder version 3.5+1-f0c1022b6
+x265 [info]: build info [Linux][GCC 13.2.0][64 bit] 8bit+10bit+12bit
+x265 [info]: using cpu capabilities: MMX2 SSE2Fast LZCNT SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+x265 [warning]: halving the quality when psy-rd is enabled for 444 input. Setting cbQpOffset = 6 and crQpOffset = 6
+x265 [info]: Main 4:4:4 profile, Level-8.5 (Main tier)
+x265 [warning]: No thread pool allocated, --wpp disabled
+x265 [warning]: No thread pool allocated, --lookahead-slices disabled
+x265 [info]: Slices                              : 1
+x265 [info]: frame threads / pool features       : 3 / none
+x265 [info]: Coding QT: max CU size, min CU size : 64 / 8
+x265 [info]: Residual QT: max TU size, max depth : 32 / 1 inter / 1 intra
+x265 [info]: ME / range / subpel / merge         : hex / 57 / 2 / 3
+x265 [info]: Keyframe min / max / scenecut / bias  : 25 / 250 / 40 / 5.00
+x265 [info]: Cb/Cr QP Offset                     : 6 / 6
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb       : 1 / 1 / 0
+x265 [info]: References / ref-limit  cu / depth  : 3 / off / on
+x265 [info]: Rate Control                        : Lossless
+x265 [info]: tools: rd=3 psy-rd=2.00 early-skip rskip mode=1 signhide tmvp
+x265 [info]: tools: b-intra strong-intra-smoothing deblock sao
+Output #0, mp4, to '../results/compression/lossless/dragons-hevc.mp4':
+  Metadata:
+    encoder         : Lavf60.16.100
+  Stream #0:0: Video: hevc (hev1 / 0x31766568), gbrp(pc, gbr/bt709/iec61966-2-1, progressive), 840x593, q=2-31, 120 fps, 15360 tbn
+    Metadata:
+      encoder         : Lavc60.31.102 libx265
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+[out#0/mp4 @ 0x55e42f926280] video:6712kB audio:0kB subtitle:0kB other streams:0kB global headers:2kB muxing overhead: 0.052337%
+frame=   26 fps=8.6 q=4.0 Lsize=    6715kB time=00:00:00.19 bitrate=287014.9kbits/s speed=0.0636x
+x265 [info]: frame I:      1, Avg QP:4.00  kb/s: 465250.56
+x265 [info]: frame P:      6, Avg QP:4.00  kb/s: 259562.24
+x265 [info]: frame B:     19, Avg QP:4.00  kb/s: 240798.77
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 28.6% 0.0% 0.0% 14.3% 57.1%
+x265 [info]: lossless compression ratio 1.88::1
+
+encoded 26 frames in 2.98s (8.72 fps), 253761.58 kb/s, Avg QP:4.00
+Encoded in 3.502368450164795 seconds.
+
+
+(data_compression) root@b0fe889cb4bb:/workspace/src# python3 video_compression.py HEVC ../datasets/Fish/Frame_%3d.png ../results/compression/lossless/fish-hevc.mp4
+Input #0, image2, from '../datasets/Fish/Frame_%3d.png':
+  Duration: 00:00:00.21, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: png, rgb24(pc, gbr/bt709/iec61966-2-1), 840x593, 120 fps, 120 tbr, 120 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> hevc (libx265))
+Press [q] to stop, [?] for help
+x265 [info]: HEVC encoder version 3.5+1-f0c1022b6
+x265 [info]: build info [Linux][GCC 13.2.0][64 bit] 8bit+10bit+12bit
+x265 [info]: using cpu capabilities: MMX2 SSE2Fast LZCNT SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+x265 [warning]: halving the quality when psy-rd is enabled for 444 input. Setting cbQpOffset = 6 and crQpOffset = 6
+x265 [info]: Main 4:4:4 profile, Level-8.5 (Main tier)
+x265 [warning]: No thread pool allocated, --wpp disabled
+x265 [warning]: No thread pool allocated, --lookahead-slices disabled
+x265 [info]: Slices                              : 1
+x265 [info]: frame threads / pool features       : 3 / none
+x265 [info]: Coding QT: max CU size, min CU size : 64 / 8
+x265 [info]: Residual QT: max TU size, max depth : 32 / 1 inter / 1 intra
+x265 [info]: ME / range / subpel / merge         : hex / 57 / 2 / 3
+x265 [info]: Keyframe min / max / scenecut / bias  : 25 / 250 / 40 / 5.00
+x265 [info]: Cb/Cr QP Offset                     : 6 / 6
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb       : 1 / 1 / 0
+x265 [info]: References / ref-limit  cu / depth  : 3 / off / on
+x265 [info]: Rate Control                        : Lossless
+x265 [info]: tools: rd=3 psy-rd=2.00 early-skip rskip mode=1 signhide tmvp
+x265 [info]: tools: b-intra strong-intra-smoothing deblock sao
+Output #0, mp4, to '../results/compression/lossless/fish-hevc.mp4':
+  Metadata:
+    encoder         : Lavf60.16.100
+  Stream #0:0: Video: hevc (hev1 / 0x31766568), gbrp(pc, gbr/bt709/iec61966-2-1, progressive), 840x593, q=2-31, 120 fps, 15360 tbn
+    Metadata:
+      encoder         : Lavc60.31.102 libx265
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+[out#0/mp4 @ 0x559bbc308280] video:3401kB audio:0kB subtitle:0kB other streams:0kB global headers:2kB muxing overhead: 0.101525%
+frame=   25 fps= 14 q=4.0 Lsize=    3405kB time=00:00:00.18 bitrate=152135.8kbits/s speed=0.0998x
+x265 [info]: frame I:      1, Avg QP:4.00  kb/s: 276252.48
+x265 [info]: frame P:      6, Avg QP:4.00  kb/s: 134641.60
+x265 [info]: frame B:     18, Avg QP:4.00  kb/s: 125521.60
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 28.6% 0.0% 14.3% 0.0% 57.1%
+x265 [info]: lossless compression ratio 3.58::1
+
+encoded 25 frames in 1.82s (13.73 fps), 133739.64 kb/s, Avg QP:4.00
+Encoded in 2.369020462036133 seconds.
+
+
+(data_compression) root@b0fe889cb4bb:/workspace/src# python3 video_compression.py HEVC ../datasets/Mannequin/Frame_%3d.png ../results/compression/lossless/mannequin-hevc.mp4
+Input #0, image2, from '../datasets/Mannequin/Frame_%3d.png':
+  Duration: 00:00:00.84, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: png, rgb24(pc, gbr/unknown/unknown), 960x720 [SAR 3937:3937 DAR 4:3], 120 fps, 120 tbr, 120 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> hevc (libx265))
+Press [q] to stop, [?] for help
+x265 [info]: HEVC encoder version 3.5+1-f0c1022b6
+x265 [info]: build info [Linux][GCC 13.2.0][64 bit] 8bit+10bit+12bit
+x265 [info]: using cpu capabilities: MMX2 SSE2Fast LZCNT SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+x265 [warning]: halving the quality when psy-rd is enabled for 444 input. Setting cbQpOffset = 6 and crQpOffset = 6
+x265 [info]: Main 4:4:4 profile, Level-8.5 (Main tier)
+x265 [warning]: No thread pool allocated, --wpp disabled
+x265 [warning]: No thread pool allocated, --lookahead-slices disabled
+x265 [info]: Slices                              : 1
+x265 [info]: frame threads / pool features       : 3 / none
+x265 [info]: Coding QT: max CU size, min CU size : 64 / 8
+x265 [info]: Residual QT: max TU size, max depth : 32 / 1 inter / 1 intra
+x265 [info]: ME / range / subpel / merge         : hex / 57 / 2 / 3
+x265 [info]: Keyframe min / max / scenecut / bias  : 25 / 250 / 40 / 5.00
+x265 [info]: Cb/Cr QP Offset                     : 6 / 6
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb       : 1 / 1 / 0
+x265 [info]: References / ref-limit  cu / depth  : 3 / off / on
+x265 [info]: Rate Control                        : Lossless
+x265 [info]: tools: rd=3 psy-rd=2.00 early-skip rskip mode=1 signhide tmvp
+x265 [info]: tools: b-intra strong-intra-smoothing deblock sao
+Output #0, mp4, to '../results/compression/lossless/mannequin-hevc.mp4':
+  Metadata:
+    encoder         : Lavf60.16.100
+  Stream #0:0: Video: hevc (hev1 / 0x31766568), gbrp(pc, gbr/unknown/unknown, progressive), 960x720 [SAR 1:1 DAR 4:3], q=2-31, 120 fps, 15360 tbn
+    Metadata:
+      encoder         : Lavc60.31.102 libx265
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+[out#0/mp4 @ 0x555811add280] video:71036kB audio:0kB subtitle:0kB other streams:0kB global headers:2kB muxing overhead: 0.006672%
+frame=  101 fps=4.1 q=4.0 Lsize=   71041kB time=00:00:00.81 bitrate=712613.8kbits/s speed=0.0334x
+x265 [info]: frame I:      1, Avg QP:4.00  kb/s: 859891.20
+x265 [info]: frame P:     23, Avg QP:4.00  kb/s: 743566.71
+x265 [info]: frame B:     77, Avg QP:4.00  kb/s: 673626.07
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 4.2% 0.0% 4.2% 54.2% 37.5%
+x265 [info]: lossless compression ratio 0.96::1
+
+encoded 101 frames in 24.39s (4.14 fps), 691397.38 kb/s, Avg QP:4.00
+Encoded in 24.932649612426758 seconds.
+
+
+(data_compression) root@b0fe889cb4bb:/workspace/src# python3 video_compression.py HEVC ../datasets/Messerschmitt/Frame_%3d.png ../results/compression/lossless/messerschmitt-hevc.mp4
+Input #0, image2, from '../datasets/Messerschmitt/Frame_%3d.png':
+  Duration: 00:00:00.21, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: png, rgb24(pc, gbr/bt709/iec61966-2-1), 840x593, 120 fps, 120 tbr, 120 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> hevc (libx265))
+Press [q] to stop, [?] for help
+x265 [info]: HEVC encoder version 3.5+1-f0c1022b6
+x265 [info]: build info [Linux][GCC 13.2.0][64 bit] 8bit+10bit+12bit
+x265 [info]: using cpu capabilities: MMX2 SSE2Fast LZCNT SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+x265 [warning]: halving the quality when psy-rd is enabled for 444 input. Setting cbQpOffset = 6 and crQpOffset = 6
+x265 [info]: Main 4:4:4 profile, Level-8.5 (Main tier)
+x265 [warning]: No thread pool allocated, --wpp disabled
+x265 [warning]: No thread pool allocated, --lookahead-slices disabled
+x265 [info]: Slices                              : 1
+x265 [info]: frame threads / pool features       : 3 / none
+x265 [info]: Coding QT: max CU size, min CU size : 64 / 8
+x265 [info]: Residual QT: max TU size, max depth : 32 / 1 inter / 1 intra
+x265 [info]: ME / range / subpel / merge         : hex / 57 / 2 / 3
+x265 [info]: Keyframe min / max / scenecut / bias  : 25 / 250 / 40 / 5.00
+x265 [info]: Cb/Cr QP Offset                     : 6 / 6
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb       : 1 / 1 / 0
+x265 [info]: References / ref-limit  cu / depth  : 3 / off / on
+x265 [info]: Rate Control                        : Lossless
+x265 [info]: tools: rd=3 psy-rd=2.00 early-skip rskip mode=1 signhide tmvp
+x265 [info]: tools: b-intra strong-intra-smoothing deblock sao
+Output #0, mp4, to '../results/compression/lossless/messerschmitt-hevc.mp4':
+  Metadata:
+    encoder         : Lavf60.16.100
+  Stream #0:0: Video: hevc (hev1 / 0x31766568), gbrp(pc, gbr/bt709/iec61966-2-1, progressive), 840x593, q=2-31, 120 fps, 15360 tbn
+    Metadata:
+      encoder         : Lavc60.31.102 libx265
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+[out#0/mp4 @ 0x559c50a33280] video:6307kB audio:0kB subtitle:0kB other streams:0kB global headers:2kB muxing overhead: 0.054936%
+frame=   25 fps=6.9 q=4.0 Lsize=    6311kB time=00:00:00.18 bitrate=281977.4kbits/s speed=0.0503x
+x265 [info]: frame I:      1, Avg QP:4.00  kb/s: 537535.68
+x265 [info]: frame P:      6, Avg QP:4.00  kb/s: 268646.08
+x265 [info]: frame B:     18, Avg QP:4.00  kb/s: 225032.05
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 28.6% 0.0% 14.3% 0.0% 57.1%
+x265 [info]: lossless compression ratio 1.93::1
+
+encoded 25 frames in 3.63s (6.89 fps), 247999.58 kb/s, Avg QP:4.00
+Encoded in 4.144362449645996 seconds.
+
+
+(data_compression) root@b0fe889cb4bb:/workspace/src# python3 video_compression.py HEVC ../datasets/OpEx/Frame_%3d.png ../results/compression/lossless/opex-hevc.mp4
+Input #0, image2, from '../datasets/OpEx/Frame_%3d.png':
+  Duration: 00:00:00.28, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: png, rgb24(pc, gbr/unknown/unknown), 3091x2068, 120 fps, 120 tbr, 120 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> hevc (libx265))
+Press [q] to stop, [?] for help
+x265 [info]: HEVC encoder version 3.5+1-f0c1022b6
+x265 [info]: build info [Linux][GCC 13.2.0][64 bit] 8bit+10bit+12bit
+x265 [info]: using cpu capabilities: MMX2 SSE2Fast LZCNT SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+x265 [warning]: halving the quality when psy-rd is enabled for 444 input. Setting cbQpOffset = 6 and crQpOffset = 6
+x265 [info]: Main 4:4:4 profile, Level-8.5 (Main tier)
+x265 [warning]: No thread pool allocated, --wpp disabled
+x265 [warning]: No thread pool allocated, --lookahead-slices disabled
+x265 [info]: Slices                              : 1
+x265 [info]: frame threads / pool features       : 3 / none
+x265 [info]: Coding QT: max CU size, min CU size : 64 / 8
+x265 [info]: Residual QT: max TU size, max depth : 32 / 1 inter / 1 intra
+x265 [info]: ME / range / subpel / merge         : hex / 57 / 2 / 3
+x265 [info]: Keyframe min / max / scenecut / bias  : 25 / 250 / 40 / 5.00
+x265 [info]: Cb/Cr QP Offset                     : 6 / 6
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb       : 1 / 1 / 0
+x265 [info]: References / ref-limit  cu / depth  : 3 / off / on
+x265 [info]: Rate Control                        : Lossless
+x265 [info]: tools: rd=3 psy-rd=2.00 early-skip rskip mode=1 signhide tmvp
+x265 [info]: tools: b-intra strong-intra-smoothing deblock sao
+Output #0, mp4, to '../results/compression/lossless/opex-hevc.mp4':
+  Metadata:
+    encoder         : Lavf60.16.100
+  Stream #0:0: Video: hevc (hev1 / 0x31766568), gbrp(pc, gbr/unknown/unknown, progressive), 3091x2068, q=2-31, 120 fps, 15360 tbn
+    Metadata:
+      encoder         : Lavc60.31.102 libx265
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+[out#0/mp4 @ 0x55f8668cf280] video:63720kB audio:0kB subtitle:0kB other streams:0kB global headers:2kB muxing overhead: 0.005770%
+frame=   34 fps=0.6 q=4.0 Lsize=   63723kB time=00:00:00.25 bitrate=2020726.6kbits/s speed=0.00461x
+x265 [info]: frame I:      1, Avg QP:4.00  kb/s: 2112882.24
+x265 [info]: frame P:      8, Avg QP:4.00  kb/s: 2030589.48
+x265 [info]: frame B:     25, Avg QP:4.00  kb/s: 1771244.08
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 11.1% 0.0% 0.0% 77.8% 11.1%
+x265 [info]: lossless compression ratio 3.33::1
+
+encoded 34 frames in 56.00s (0.61 fps), 1842314.89 kb/s, Avg QP:4.00
+Encoded in 57.35464668273926 seconds.

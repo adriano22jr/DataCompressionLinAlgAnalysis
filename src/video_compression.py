@@ -1,4 +1,4 @@
-import sys, pathlib, time
+import sys, pathlib
 import compressors
 
 algorithm = ""

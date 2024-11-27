@@ -1,0 +1,418 @@
+(data_compression) root@b0fe889cb4bb:/workspace/src# python3 video_compression.py HUFFYUV ../datasets/ArtGallery/Frame_%3d.png ../results/compression/lossless/artgallery-huffyuv.avi
+ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers
+  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)
+  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared
+  libavutil      58. 29.100 / 58. 29.100
+  libavcodec     60. 31.102 / 60. 31.102
+  libavformat    60. 16.100 / 60. 16.100
+  libavdevice    60.  3.100 / 60.  3.100
+  libavfilter     9. 12.100 /  9. 12.100
+  libswscale      7.  5.100 /  7.  5.100
+  libswresample   4. 12.100 /  4. 12.100
+  libpostproc    57.  3.100 / 57.  3.100
+Input #0, image2, from '../datasets/ArtGallery/Frame_%3d.png':
+  Duration: 00:00:00.84, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: png, rgb24(pc, gbr/unknown/unknown), 960x720 [SAR 3937:3937 DAR 4:3], 120 fps, 120 tbr, 120 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> huffyuv (native))
+Press [q] to stop, [?] for help
+[huffyuv @ 0x56483af5ac80] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x56483b05c9c0] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x56483b1629c0] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x56483b2664c0] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x56483b36a080] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x56483b46dc40] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x56483b571800] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x56483b6753c0] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x56483b778f80] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x56483b87cb40] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x56483b980700] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x56483ba842c0] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x56483ae18f40] using huffyuv 2.2.0 or newer interlacing flag
+Output #0, avi, to '../results/compression/lossless/artgallery-huffyuv.avi':
+  Metadata:
+    ISFT            : Lavf60.16.100
+  Stream #0:0: Video: huffyuv (HFYU / 0x55594648), rgb24(pc, gbr/unknown/unknown, progressive), 960x720 [SAR 3937:3937 DAR 4:3], q=2-31, 200 kb/s, 120 fps, 120 tbn
+    Metadata:
+      encoder         : Lavc60.31.102 huffyuv
+[out#0/avi @ 0x56483ae152c0] video:82415kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.009825%
+frame=  101 fps=0.0 q=-0.0 Lsize=   82423kB time=00:00:00.83 bitrate=810250.0kbits/s speed=1.08x
+Encoded in 1.2364146709442139 seconds.
+
+
+(data_compression) root@b0fe889cb4bb:/workspace/src# python3 video_compression.py HUFFYUV ../datasets/Blob/Frame_%3d.png ../results/compression/lossless/blob-huffyuv.avi
+ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers
+  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)
+  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared
+  libavutil      58. 29.100 / 58. 29.100
+  libavcodec     60. 31.102 / 60. 31.102
+  libavformat    60. 16.100 / 60. 16.100
+  libavdevice    60.  3.100 / 60.  3.100
+  libavfilter     9. 12.100 /  9. 12.100
+  libswscale      7.  5.100 /  7.  5.100
+  libswresample   4. 12.100 /  4. 12.100
+  libpostproc    57.  3.100 / 57.  3.100
+Input #0, image2, from '../datasets/Blob/Frame_%3d.png':
+  Duration: 00:00:00.84, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: png, rgb24(pc, gbr/unknown/unknown), 960x720 [SAR 3937:3937 DAR 4:3], 120 fps, 120 tbr, 120 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> huffyuv (native))
+Press [q] to stop, [?] for help
+[huffyuv @ 0x55715a636040] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x55715a737d80] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x55715a83dd80] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x55715a941880] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x55715aa45440] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x55715ab49000] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x55715ac4cbc0] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x55715ad50780] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x55715ae54340] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x55715af57f00] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x55715b05bac0] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x55715b15f680] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x55715a4f3f40] using huffyuv 2.2.0 or newer interlacing flag
+Output #0, avi, to '../results/compression/lossless/blob-huffyuv.avi':
+  Metadata:
+    ISFT            : Lavf60.16.100
+  Stream #0:0: Video: huffyuv (HFYU / 0x55594648), rgb24(pc, gbr/unknown/unknown, progressive), 960x720 [SAR 3937:3937 DAR 4:3], q=2-31, 200 kb/s, 120 fps, 120 tbn
+    Metadata:
+      encoder         : Lavc60.31.102 huffyuv
+[out#0/avi @ 0x55715a4f02c0] video:63631kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.012726%
+frame=  101 fps=0.0 q=-0.0 Lsize=   63639kB time=00:00:00.83 bitrate=625600.0kbits/s speed=1.46x
+Encoded in 0.9783978462219238 seconds.
+
+
+(data_compression) root@b0fe889cb4bb:/workspace/src# python3 video_compression.py HUFFYUV ../datasets/Car/Frame_%3d.png ../results/compression/lossless/car-huffyuv.avi
+ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers
+  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)
+  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared
+  libavutil      58. 29.100 / 58. 29.100
+  libavcodec     60. 31.102 / 60. 31.102
+  libavformat    60. 16.100 / 60. 16.100
+  libavdevice    60.  3.100 / 60.  3.100
+  libavfilter     9. 12.100 /  9. 12.100
+  libswscale      7.  5.100 /  7.  5.100
+  libswresample   4. 12.100 /  4. 12.100
+  libpostproc    57.  3.100 / 57.  3.100
+Input #0, image2, from '../datasets/Car/Frame_%3d.png':
+  Duration: 00:00:00.84, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: png, rgb24(pc, gbr/unknown/unknown), 960x720 [SAR 3937:3937 DAR 4:3], 120 fps, 120 tbr, 120 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> huffyuv (native))
+Press [q] to stop, [?] for help
+[huffyuv @ 0x55f8ba24cec0] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x55f8ba34ec00] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x55f8ba454c00] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x55f8ba558700] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x55f8ba65c2c0] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x55f8ba75fe80] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x55f8ba863a40] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x55f8ba967600] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x55f8baa6b1c0] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x55f8bab6ed80] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x55f8bac72940] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x55f8bad76500] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x55f8ba10af40] using huffyuv 2.2.0 or newer interlacing flag
+Output #0, avi, to '../results/compression/lossless/car-huffyuv.avi':
+  Metadata:
+    ISFT            : Lavf60.16.100
+  Stream #0:0: Video: huffyuv (HFYU / 0x55594648), rgb24(pc, gbr/unknown/unknown, progressive), 960x720 [SAR 3937:3937 DAR 4:3], q=2-31, 200 kb/s, 120 fps, 120 tbn
+    Metadata:
+      encoder         : Lavc60.31.102 huffyuv
+[out#0/avi @ 0x55f8ba1072c0] video:63897kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.012673%
+frame=  101 fps=0.0 q=-0.0 Lsize=   63905kB time=00:00:00.83 bitrate=628210.5kbits/s speed=1.38x
+Encoded in 1.0202357769012451 seconds.
+
+
+(data_compression) root@b0fe889cb4bb:/workspace/src# python3 video_compression.py HUFFYUV ../datasets/Cobblestone/Frame_%3d.png ../results/compression/lossless/cobblestone-huffyuv.avi
+ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers
+  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)
+  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared
+  libavutil      58. 29.100 / 58. 29.100
+  libavcodec     60. 31.102 / 60. 31.102
+  libavformat    60. 16.100 / 60. 16.100
+  libavdevice    60.  3.100 / 60.  3.100
+  libavfilter     9. 12.100 /  9. 12.100
+  libswscale      7.  5.100 /  7.  5.100
+  libswresample   4. 12.100 /  4. 12.100
+  libpostproc    57.  3.100 / 57.  3.100
+Input #0, image2, from '../datasets/Cobblestone/Frame_%3d.png':
+  Duration: 00:00:00.84, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: png, rgb24(pc, gbr/unknown/unknown), 960x720 [SAR 3937:3937 DAR 4:3], 120 fps, 120 tbr, 120 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> huffyuv (native))
+Press [q] to stop, [?] for help
+[huffyuv @ 0x56161a899b80] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x56161a99b8c0] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x56161aaa18c0] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x56161aba53c0] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x56161aca8f80] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x56161adacb40] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x56161aeb0700] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x56161afb42c0] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x56161b0b7e80] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x56161b1bba40] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x56161b2bf600] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x56161b3c31c0] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x56161a757f40] using huffyuv 2.2.0 or newer interlacing flag
+Output #0, avi, to '../results/compression/lossless/cobblestone-huffyuv.avi':
+  Metadata:
+    ISFT            : Lavf60.16.100
+  Stream #0:0: Video: huffyuv (HFYU / 0x55594648), rgb24(pc, gbr/unknown/unknown, progressive), 960x720 [SAR 3937:3937 DAR 4:3], q=2-31, 200 kb/s, 120 fps, 120 tbn
+    Metadata:
+      encoder         : Lavc60.31.102 huffyuv
+[out#0/avi @ 0x56161a7542c0] video:97569kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.008299%
+frame=  101 fps=0.0 q=-0.0 Lsize=   97577kB time=00:00:00.83 bitrate=959225.9kbits/s speed=0.843x
+Encoded in 1.4201829433441162 seconds.
+
+
+(data_compression) root@b0fe889cb4bb:/workspace/src# python3 video_compression.py HUFFYUV ../datasets/Dice/Frame_%3d.png ../results/compression/lossless/dice-huffyuv.avi
+ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers
+  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)
+  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared
+  libavutil      58. 29.100 / 58. 29.100
+  libavcodec     60. 31.102 / 60. 31.102
+  libavformat    60. 16.100 / 60. 16.100
+  libavdevice    60.  3.100 / 60.  3.100
+  libavfilter     9. 12.100 /  9. 12.100
+  libswscale      7.  5.100 /  7.  5.100
+  libswresample   4. 12.100 /  4. 12.100
+  libpostproc    57.  3.100 / 57.  3.100
+Input #0, image2, from '../datasets/Dice/Frame_%3d.png':
+  Duration: 00:00:00.21, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: png, rgb24(pc, gbr/bt709/iec61966-2-1), 840x593, 120 fps, 120 tbr, 120 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> huffyuv (native))
+Press [q] to stop, [?] for help
+[huffyuv @ 0x5624f53f2280] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x5624f53f3980] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x5624f54b2400] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x5624f54b56c0] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x5624f524bbc0] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x5624f524ee80] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x5624f52514c0] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x5624f52e6600] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x5624f52e9a40] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x5624f52ea6c0] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x5624f55787c0] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x5624f557aec0] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x5624f51fbe80] using huffyuv 2.2.0 or newer interlacing flag
+Output #0, avi, to '../results/compression/lossless/dice-huffyuv.avi':
+  Metadata:
+    ISFT            : Lavf60.16.100
+  Stream #0:0: Video: huffyuv (HFYU / 0x55594648), rgb24(pc, gbr/bt709/iec61966-2-1, progressive), 840x593, q=2-31, 200 kb/s, 120 fps, 120 tbn
+    Metadata:
+      encoder         : Lavc60.31.102 huffyuv
+[out#0/avi @ 0x5624f51f32c0] video:10567kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.059075%
+frame=   25 fps=0.0 q=-0.0 Lsize=   10573kB time=00:00:00.20 bitrate=433063.5kbits/s speed=2.19x
+Encoded in 0.5373833179473877 seconds.
+
+
+(data_compression) root@b0fe889cb4bb:/workspace/src# python3 video_compression.py HUFFYUV ../datasets/Dragons/Frame_%3d.png ../results/compression/lossless/dragons-huffyuv.avi
+ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers
+  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)
+  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared
+  libavutil      58. 29.100 / 58. 29.100
+  libavcodec     60. 31.102 / 60. 31.102
+  libavformat    60. 16.100 / 60. 16.100
+  libavdevice    60.  3.100 / 60.  3.100
+  libavfilter     9. 12.100 /  9. 12.100
+  libswscale      7.  5.100 /  7.  5.100
+  libswresample   4. 12.100 /  4. 12.100
+  libpostproc    57.  3.100 / 57.  3.100
+Input #0, image2, from '../datasets/Dragons/Frame_%3d.png':
+  Duration: 00:00:00.22, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: png, rgb24(pc, gbr/bt709/iec61966-2-1), 840x593, 120 fps, 120 tbr, 120 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> huffyuv (native))
+Press [q] to stop, [?] for help
+[huffyuv @ 0x55ad20e99040] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x55ad20f9ab80] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x55ad210a0140] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x55ad211a3640] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x55ad212a6c00] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x55ad213aa1c0] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x55ad214ad780] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x55ad215b0d40] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x55ad216b4300] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x55ad217b78c0] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x55ad218bae80] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x55ad219be440] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x55ad20d53a00] using huffyuv 2.2.0 or newer interlacing flag
+Output #0, avi, to '../results/compression/lossless/dragons-huffyuv.avi':
+  Metadata:
+    ISFT            : Lavf60.16.100
+  Stream #0:0: Video: huffyuv (HFYU / 0x55594648), rgb24(pc, gbr/bt709/iec61966-2-1, progressive), 840x593, q=2-31, 200 kb/s, 120 fps, 120 tbn
+    Metadata:
+      encoder         : Lavc60.31.102 huffyuv
+[out#0/avi @ 0x55ad20d532c0] video:15404kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.040676%
+frame=   26 fps=0.0 q=-0.0 Lsize=   15410kB time=00:00:00.20 bitrate=605948.8kbits/s speed=1.11x
+Encoded in 0.6566355228424072 seconds.
+
+
+(data_compression) root@b0fe889cb4bb:/workspace/src# python3 video_compression.py HUFFYUV ../datasets/Fish/Frame_%3d.png ../results/compression/lossless/fish-huffyuv.avi
+ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers
+  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)
+  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared
+  libavutil      58. 29.100 / 58. 29.100
+  libavcodec     60. 31.102 / 60. 31.102
+  libavformat    60. 16.100 / 60. 16.100
+  libavdevice    60.  3.100 / 60.  3.100
+  libavfilter     9. 12.100 /  9. 12.100
+  libswscale      7.  5.100 /  7.  5.100
+  libswresample   4. 12.100 /  4. 12.100
+  libpostproc    57.  3.100 / 57.  3.100
+Input #0, image2, from '../datasets/Fish/Frame_%3d.png':
+  Duration: 00:00:00.21, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: png, rgb24(pc, gbr/bt709/iec61966-2-1), 840x593, 120 fps, 120 tbr, 120 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> huffyuv (native))
+Press [q] to stop, [?] for help
+[huffyuv @ 0x5616bb697540] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x5616bb799080] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x5616bb89e640] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x5616bb9a1b40] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x5616bbaa5100] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x5616bbba86c0] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x5616bbcabc80] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x5616bbdaf240] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x5616bbeb2800] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x5616bbfb5dc0] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x5616bc0b9380] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x5616bc1bc940] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x5616bb551a00] using huffyuv 2.2.0 or newer interlacing flag
+Output #0, avi, to '../results/compression/lossless/fish-huffyuv.avi':
+  Metadata:
+    ISFT            : Lavf60.16.100
+  Stream #0:0: Video: huffyuv (HFYU / 0x55594648), rgb24(pc, gbr/bt709/iec61966-2-1, progressive), 840x593, q=2-31, 200 kb/s, 120 fps, 120 tbn
+    Metadata:
+      encoder         : Lavc60.31.102 huffyuv
+[out#0/avi @ 0x5616bb5512c0] video:13856kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.045050%
+frame=   25 fps=0.0 q=-0.0 Lsize=   13862kB time=00:00:00.20 bitrate=567798.9kbits/s speed=1.64x
+Encoded in 0.5580670833587646 seconds.
+
+
+(data_compression) root@b0fe889cb4bb:/workspace/src# python3 video_compression.py HUFFYUV ../datasets/Mannequin/Frame_%3d.png ../results/compression/lossless/mannequin-huffyuv.avi
+ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers
+  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)
+  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared
+  libavutil      58. 29.100 / 58. 29.100
+  libavcodec     60. 31.102 / 60. 31.102
+  libavformat    60. 16.100 / 60. 16.100
+  libavdevice    60.  3.100 / 60.  3.100
+  libavfilter     9. 12.100 /  9. 12.100
+  libswscale      7.  5.100 /  7.  5.100
+  libswresample   4. 12.100 /  4. 12.100
+  libpostproc    57.  3.100 / 57.  3.100
+Input #0, image2, from '../datasets/Mannequin/Frame_%3d.png':
+  Duration: 00:00:00.84, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: png, rgb24(pc, gbr/unknown/unknown), 960x720 [SAR 3937:3937 DAR 4:3], 120 fps, 120 tbr, 120 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> huffyuv (native))
+Press [q] to stop, [?] for help
+[huffyuv @ 0x55641bff6e40] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x55641c0f8b80] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x55641c1feb80] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x55641c302680] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x55641c406240] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x55641c509e00] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x55641c60d9c0] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x55641c711580] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x55641c815140] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x55641c918d00] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x55641ca1c8c0] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x55641cb20480] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x55641beb4f40] using huffyuv 2.2.0 or newer interlacing flag
+Output #0, avi, to '../results/compression/lossless/mannequin-huffyuv.avi':
+  Metadata:
+    ISFT            : Lavf60.16.100
+  Stream #0:0: Video: huffyuv (HFYU / 0x55594648), rgb24(pc, gbr/unknown/unknown, progressive), 960x720 [SAR 3937:3937 DAR 4:3], q=2-31, 200 kb/s, 120 fps, 120 tbn
+    Metadata:
+      encoder         : Lavc60.31.102 huffyuv
+[out#0/avi @ 0x55641beb12c0] video:84741kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.009556%
+frame=  101 fps=0.0 q=-0.0 Lsize=   84749kB time=00:00:00.83 bitrate=833120.2kbits/s speed=1.06x
+Encoded in 1.1924645900726318 seconds.
+
+
+(data_compression) root@b0fe889cb4bb:/workspace/src# python3 video_compression.py HUFFYUV ../datasets/Messerschmitt/Frame_%3d.png ../results/compression/lossless/messerschmitt-huffyuv.avi
+ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers
+  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)
+  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared
+  libavutil      58. 29.100 / 58. 29.100
+  libavcodec     60. 31.102 / 60. 31.102
+  libavformat    60. 16.100 / 60. 16.100
+  libavdevice    60.  3.100 / 60.  3.100
+  libavfilter     9. 12.100 /  9. 12.100
+  libswscale      7.  5.100 /  7.  5.100
+  libswresample   4. 12.100 /  4. 12.100
+  libpostproc    57.  3.100 / 57.  3.100
+Input #0, image2, from '../datasets/Messerschmitt/Frame_%3d.png':
+  Duration: 00:00:00.21, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: png, rgb24(pc, gbr/bt709/iec61966-2-1), 840x593, 120 fps, 120 tbr, 120 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> huffyuv (native))
+Press [q] to stop, [?] for help
+[huffyuv @ 0x5603c87e6380] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x5603c88e7ec0] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x5603c89ed480] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x5603c8af0980] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x5603c8bf3f40] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x5603c8cf7500] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x5603c8dfaac0] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x5603c8efe080] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x5603c9001640] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x5603c9104c00] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x5603c92081c0] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x5603c930b780] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x5603c86a0a00] using huffyuv 2.2.0 or newer interlacing flag
+Output #0, avi, to '../results/compression/lossless/messerschmitt-huffyuv.avi':
+  Metadata:
+    ISFT            : Lavf60.16.100
+  Stream #0:0: Video: huffyuv (HFYU / 0x55594648), rgb24(pc, gbr/bt709/iec61966-2-1, progressive), 840x593, q=2-31, 200 kb/s, 120 fps, 120 tbn
+    Metadata:
+      encoder         : Lavc60.31.102 huffyuv
+[out#0/avi @ 0x5603c86a02c0] video:11474kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.054401%
+frame=   25 fps=0.0 q=-0.0 Lsize=   11481kB time=00:00:00.20 bitrate=470246.6kbits/s speed=1.65x
+Encoded in 0.5335450172424316 seconds.
+
+
+(data_compression) root@b0fe889cb4bb:/workspace/src# python3 video_compression.py HUFFYUV ../datasets/OpEx/Frame_%3d.png ../results/compression/lossless/opex-huffyuv.avi
+ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers
+  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)
+  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared
+  libavutil      58. 29.100 / 58. 29.100
+  libavcodec     60. 31.102 / 60. 31.102
+  libavformat    60. 16.100 / 60. 16.100
+  libavdevice    60.  3.100 / 60.  3.100
+  libavfilter     9. 12.100 /  9. 12.100
+  libswscale      7.  5.100 /  7.  5.100
+  libswresample   4. 12.100 /  4. 12.100
+  libpostproc    57.  3.100 / 57.  3.100
+Input #0, image2, from '../datasets/OpEx/Frame_%3d.png':
+  Duration: 00:00:00.28, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: png, rgb24(pc, gbr/unknown/unknown), 3091x2068, 120 fps, 120 tbr, 120 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> huffyuv (native))
+Press [q] to stop, [?] for help
+[huffyuv @ 0x562880b21640] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x562880c22440] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x562880c230c0] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x562880e3fd40] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x562880f49c00] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x562881053c40] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x56288115dc80] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x562881267cc0] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x562881371d00] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x56288147bd40] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x562881585d80] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x56288168fdc0] using huffyuv 2.2.0 or newer interlacing flag
+[huffyuv @ 0x5628809dde00] using huffyuv 2.2.0 or newer interlacing flag
+Output #0, avi, to '../results/compression/lossless/opex-huffyuv.avi':
+  Metadata:
+    ISFT            : Lavf60.16.100
+  Stream #0:0: Video: huffyuv (HFYU / 0x55594648), rgb24(pc, gbr/unknown/unknown, progressive), 3091x2068, q=2-31, 200 kb/s, 120 fps, 120 tbn
+    Metadata:
+      encoder         : Lavc60.31.102 huffyuv
+[out#0/avi @ 0x5628809dc2c0] video:169578kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.003805%
+frame=   34 fps= 12 q=-0.0 Lsize=  169585kB time=00:00:00.27 bitrate=5051771.3kbits/s speed=0.0962x
+Encoded in 3.622497081756592 seconds.

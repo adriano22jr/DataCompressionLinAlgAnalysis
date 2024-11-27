@@ -1,9 +1,4 @@
-import imageio as iio
-import numpy as np
-import imageio.plugins.pyav as pyav
 import av, sys
-from PIL import Image, ImageChops
-from pathlib import Path
 
 input_path = ""
 output_path = ""
@@ -11,7 +6,7 @@ if(len(sys.argv[1:]) == 2):
     input_path = sys.argv[1]
     output_path = sys.argv[2]
 else:
-    print("Specify those parameters:\n\t-Input path (es. output.mp4)\n\t-Output path (es. result/Frame_%d.png)")
+    print("Specify those parameters:\n\t-Input path (es. output.mp4)\n\t-Output path (es. result/Frame_%03d.png)")
     exit()
 
 imgDec = ""
